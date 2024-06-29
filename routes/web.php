@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,14 @@ Route::get('/kontak', function () {
     return view('kontak');
 });
 
+
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
 Route::get('/signup', function () {
-    return 'Signup Page'; // Atau arahkan ke view signup jika ada
-});
+    return view('auth.signup');
+})->name('signup');
+
+Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup');
+Route::post('/signup', [AuthController::class, 'signup']);

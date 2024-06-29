@@ -13,7 +13,7 @@
                 <p class="mt-4 mr-4 text-lg text-black">Track the success of our graduates and stay connected with the University Alumni Tracer Management Information System.</p>
                 <div class="mt-8 flex items-center">
                     <a href="#kuisioner" class="inline-block bg-green-900 text-white px-6 py-3 rounded-2xl text-lg font-medium hover:bg-green-800">Learn More</a>
-                    <span class="ml-4 text-md text-black">Already have an account? <a href="{{ url('/') }}" class="font-bold text-green-900">Sign In</a></span>
+                    <span class="ml-4 text-md text-black">Already have an account? <a href="{{ url('/login') }}" class="font-bold text-green-900">Sign In</a></span>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center relative mt-8">
